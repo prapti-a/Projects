@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Monthly Planner</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">      
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans bg-[#f6e7e7] flex justify-center py-10 min-h-[115vh]">
+
+    <div class="w-[650px] bg-white p-5 my-5 rounded-[20px] shadow-[0_5px_15px_rgba(0,0,0,0.2)] relative">
+        <div class="flex justify-between items-center mb-5 text-[#efcfcf]">
+            <button id="prev" class="bg-white text-[#efcfcf] border-none px-3.5 py-2 text-2xl cursor-pointer hover:bg-[#e0b5b5] hover:rounded-[40%]">&lt;</button>
+            <h1 id="monthYear" class="font-[Dancing_Script] font-semibold text-center  text-4xl mb-5"></h1>
+            <button id="next" class="bg-white text-[#efcfcf] border-none px-3.5 py-2  text-2xl cursor-pointer hover:bg-[#e0b5b5] hover:rounded-[40%]">&gt;</button>
+        </div>
+
+        <div class=" grid grid-cols-7 text-center font-bold mb-2 text-sm text-[#F2DADA]">
+            <div>Sun</div>
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+        </div>
+
+        <div class="grid grid-cols-7 gap-1.25 w-full h-[600px] bg-[url('flo.jpeg')] bg-no-repeat bg-center bg-contain" id="calendar"></div>
+    </div>
+
+    <!-- Modal -->
+     <div class="hidden fixed inset-0 bg-black/40 justify-center items-center" id="taskModal">
+        <div class="bg-[#fff1f1] w-[350px] p-5 rounded-[15px]">
+            <h2>Add Task</h2>
+
+            <textarea id="taskInput" placeholder="Enter your tasks.." class="w-full h-[100px] my-[15px] p-2 resize-none"></textarea>
+
+            <div class="flex justify-between">
+                <button id="saveTask" class="py-2 px-[15px] cursor-pointer bg-[#ffe3e3] border-0">Save</button>
+                <button id="deleteTask" class="py-2 px-[15px] cursor-pointer bg-[#ffe3e3] border-0">Delete</button>
+                <button id="cancelTask" class="py-2 px-[15px] cursor-pointer bg-[#ffe3e3] border-0">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

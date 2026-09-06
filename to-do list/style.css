@@ -1,0 +1,123 @@
+/* * { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #f6e7e7;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0; 
+    min-height: 115vh;
+}
+.container {
+    width: 650px;
+    background: white;
+    padding: 20px;
+    margin: 20px 0; 
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+    position: relative;
+}
+#monthYear {
+  font-family: "Dancing Script", cursive;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #efcfcf
+}
+.weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #F2DADA;
+}
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    width: 100%;
+    height: 600px;
+    background: url("flo.jpeg") no-repeat center;
+    background-size: contain;
+}
+.modal { 
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.4);
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    background: #fff1f1;
+    width: 350px;
+    padding: 20px;
+    border-radius: 15px;
+}
+.modal textarea {
+    width: 100%;
+    height: 100px;
+    margin: 15px 0;
+    padding:10px;
+    resize: none;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+.buttons button {
+    padding: 8px 15px;
+    cursor: pointer;
+    background-color: #ffe3e3;
+    border: none;
+}
+ #prev, #next { 
+    background: white;
+    color: #efcfcf;
+    border:none;
+    padding: 8px 14px;
+    cursor: pointer;
+}
+#prev:hover, #next:hover {
+    background: #e0b5b5;
+    border-radius: 40%;
+} 
+.day {
+    height: 90px;
+    border: 1px solid #ccc;
+    position: relative;
+    padding: 5px;
+    overflow-y: auto;
+}
+.date {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.today {
+    border-radius: 10px;
+    border:  2px solid #f2dada;
+}
+.tasks {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 12px;
+    color: #dfafaf;
+}
+.tasks p{
+    margin: 2px 0;
+    word-break: break-word;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+} */

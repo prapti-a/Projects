@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="h-screen flex justify-center items-center bg-white font-sans ">
+
+<div class=" w-[300px] bg-white p-[20px] rounded-[17px] shadow-[0_10px_25px_rgba(0,0,0,0.2)]">
+
+    <input type="text" id="display" class="w-full h-[70px] mb-[20px] text-[32px] text-center p-[10px] border-none outline-none bg-[#eeeeee] rounded-[10px]" readonly>
+
+    <div class="grid  grid-cols-4 gap-[10px]">
+        <button class="h-[60px] border-none rounded-[10px] text-[20px] cursor-pointer bg-[#f2f2f2] transition duration-300 hover:bg-[#dddddd] active:scale-100">␈</button>
+        <button class="h-[60px] border-none rounded-[10px] text-[20px] cursor-pointer bg-[#f2f2f2] transition duration-300 hover:bg-[#dddddd] active:scale-100">AC</button>
+        <button class="h-[60px] border-none rounded-[10px] text-[20px] cursor-pointer bg-[#f2f2f2] transition duration-300 hover:bg-[#dddddd] active:scale-100">%</button>
+        <button class="h-[60px] border-none rounded-[10px] text-[20px] cursor-pointer bg-[#f2f2f2] transition duration-300 hover:bg-[#dddddd] active:scale-100">÷</button>
+
+        <button class="h-[60px] border-none rounded-[10px] text-[20px] cursor-pointer bg-[#f2f2f2] transition duration-300 hover:bg-[#dddddd] active:scale-100">7</button>
+        <button class="h-[60px] border-none rounded-[10px] text-[20px] cursor-pointer bg-[#f2f2f2] transition duration-300 hover:bg-[#dddddd] active:scale-100">8</button>
+        <button class="h-[60px] border-none rounded-[10px] text-[20px] cursor-pointer bg-[#f2f2f2] transition duration-300 hover:bg-[#dddddd] active:scale-100">9</button>
+        <button class="h-[60px] border-none rounded-[10px] text-[20px] cursor-pointer bg-[#f2f2f2] transition duration-300 hover:bg-[#dddddd] active:scale-100">×</button>
+
+        <button class="h-[60px] border-none rounded-[10px] text-[20px] cursor-pointer bg-[#f2f2f2] transition duration-300 hover:bg-[#dddddd] active:scale-100">4</button>
+        <button class="h-[60px] border-none rounded-[10px] text-[20px] cursor-pointer bg-[#f2f2f2] transition duration-300 hover:bg-[#dddddd] active:scale-100">5</button>
+        <button class="h-[60px] border-none rounded-[10px] text-[20px] cursor-pointer bg-[#f2f2f2] transition duration-300 hover:bg-[#dddddd] active:scale-100">6</button>
+        <button class="h-[60px] border-none rounded-[10px] text-[20px] cursor-pointer bg-[#f2f2f2] transition duration-300 hover:bg-[#dddddd] active:scale-100">-</button>
+
+        <button class="h-[60px] border-none rounded-[10px] text-[20px] cursor-pointer bg-[#f2f2f2] transition duration-300 hover:bg-[#dddddd] active:scale-100">1</button>
+        <button class="h-[60px] border-none rounded-[10px] text-[20px] cursor-pointer bg-[#f2f2f2] transition duration-300 hover:bg-[#dddddd] active:scale-100">2</button>
+        <button class="h-[60px] border-none rounded-[10px] text-[20px] cursor-pointer bg-[#f2f2f2] transition duration-300 hover:bg-[#dddddd] active:scale-100">3</button>
+        <button class="h-[60px] border-none rounded-[10px] text-[20px] cursor-pointer bg-[#f2f2f2] transition duration-300 hover:bg-[#dddddd] active:scale-100">+</button>
+
+        <button class="h-[60px] border-none rounded-[10px] text-[20px] cursor-pointer bg-[#f2f2f2] transition duration-300 hover:bg-[#dddddd] active:scale-100">+/-</button>
+        <button class="h-[60px] border-none rounded-[10px] text-[20px] cursor-pointer bg-[#f2f2f2] transition duration-300 hover:bg-[#dddddd] active:scale-100">0</button>
+        <button class="h-[60px] border-none rounded-[10px] text-[20px] cursor-pointer bg-[#f2f2f2] transition duration-300 hover:bg-[#dddddd] active:scale-100">.</button>
+        <button class="h-[60px] border-none rounded-[10px] text-[20px] cursor-pointer bg-[#f2f2f2] transition duration-300 hover:bg-[#dddddd] active:scale-100">=</button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
