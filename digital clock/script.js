@@ -21,7 +21,7 @@ function update()
         ampm = "PM";
 
     if (hours > 12)
-         hours = hours - 12;
+         hours -= 12;
 
     if (hours == 0)
          hours = 12;
