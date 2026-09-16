@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+    <title>Bollywood Fun Trivia</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="quiz-container">
+
+        <h1><em>Trivia</em></h1>
+        <form id="quizform">
+            <!-- <fieldset> -->
+                <!-- <legend>Bollywood Edition</legend> -->
+                <fieldset>
+                <legend>1. Who plays the female lead in the movie  <em>" Chandni Chowk to China "</em> ?</legend>
+                <label>
+                    <input type="radio" name="q1" value="0">
+                Alia Bhatt
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="1">
+                Deepika Padukone
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="0">
+                Ananya Panday   
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="0">
+                Kiara Advani  
+                </label>
+                <p id="q1message"></p>
+                </fieldset>
+               
+
+                <fieldset>
+                <legend>2. Which of the following actors were part of the cast of Karan Johar's second directorial film? </legend>
+                <label>
+                    <input type="checkbox" name="q2" value="1">
+                 Jaya Bachchan 
+                </label>
+
+                <label>
+                    <input type="checkbox" name="q2" value="1">
+                 Shah Rukh Khan  
+                </label>
+
+                <label>
+                    <input type="checkbox" name="q2" value="1">
+                 Kareena Kapoor   
+                </label>
+
+                <label>
+                    <input type="checkbox" name="q2" value="1">
+                 Kajol   
+                </label>
+
+                <label>
+                    <input type="checkbox" name="q2" value="1">
+                 Rani Mukherji
+                </label>
+
+                 <label>
+                    <input type="checkbox" name="q2" value="1">
+                 Hrithik Roshan
+                </label>
+
+                 <label>
+                    <input type="checkbox" name="q2" value="1">
+                 Amitabh Bachchan
+                </label>
+                <p id="q2message"></p>
+                </fieldset>
+               
+                <fieldset>
+                <legend>3. What was Ranbir Kapoor's character's nickname in <em>" Yeh Jawaani Hai Deewani "</em> ?</legend>
+
+                <input type="text" id="q3" name="q3" placeholder="Type your answer">
+                <p id="q3message"></p>
+                </fieldset>
+                
+        
+                <fieldset>
+                    <legend>4. In which year was Bollywood's first ever talkie film released? </legend>
+
+                <select id="q4" name="q4">
+
+                    <option value="">
+                        Choose an answer
+                    </option>
+
+                    <option value="0">
+                        1930
+                    </option>
+
+                    <option value="1">
+                        1931 
+                    </option>
+
+                    <option value="0">
+                         1932   
+                    </option>
+
+                    <option value="0">
+                         1933  
+                    </option>
+
+                </select>
+                <p id="q4message"></p>
+                </fieldset>
+                
+
+            <fieldset>
+                <legend>5. Which actor debuted with a double role in <em>" Kaho Naa Pyaar Hai "</em> ? </legend>
+
+            <label>
+                <input type="radio" name="q5" value="0">
+                Ranveer Singh  
+            </label>
+
+            <label>
+               <input type="radio" name="q5" value="0" >
+               Shahid Kapoor
+            </label>
+
+            <label>
+               <input type="radio" name="q5" value="1" >
+               Hrithik Roshan 
+            </label>
+
+            <label>
+               <input type="radio" name="q5" value="0">
+               Shah Rukh Khan
+            </label>
+            <p id="q5message"></p>
+            </fieldset>
+            
+
+            <div>
+                <button type="submit" id="submitbtn">
+                   Submit Quiz
+                </button>
+
+                <button type="reset" id="resetbtn">
+                   Reset Quiz
+                </button>
+            </div>
+            <!-- </fieldset> -->
+        </form>
+
+        <div id="result"></div>
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #ff6f5b;
+    --card-bg: #fffaf7;
+    --text: #2b2421;
+    --muted: #9a8f88;
+    --coral: #ff6f5b;
+    --coral-dark: #e5533f;
+    --border: #f0ddd8;
+    --error: #d64b3a;
+    --success: #2f8f5b;
+}
+
+body {
+    min-height: 100vh;
+    padding: 50px 20px;
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.quiz-container {
+    width: 100%;
+    max-width: 620px;
+}
+
+h1 {
+    margin-bottom: 28px;
+    text-align: center;
+    font-family: "Dancing Script", sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+h1 em {
+    font-family: "Dancing Script", sans-serif;
+    font-style: normal;
+    color: white;
+}
+
+legend {
+    width: 100%;
+    margin-bottom: 16px;
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+legend em {
+    font-family: "Great Vibes";
+    font-style: normal;
+    font-weight: 400;
+    color: var(--coral-dark);
+}
+
+#quizform {
+    background-color: var(--card-bg);
+    border-radius: 18px;
+    padding: 40px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+}
+
+fieldset {
+    border: none;
+    padding: 24px 0;
+}
+
+fieldset:first-of-type {
+    padding-top: 0;
+}
+
+fieldset:last-of-type {
+    padding-bottom: 0;
+}
+
+fieldset label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+fieldset label:hover {
+    color: var(--coral-dark);
+}
+
+fieldset input[type="radio"],
+fieldset input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--coral);
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+#q3 {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background-color: white;
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    font-size: 0.95rem;
+}
+
+#q3::placeholder {
+    color: var(--muted);
+}
+
+#q3:focus {
+    outline: none;
+    border-color: var(--coral);
+    box-shadow: 0 0 0 2px rgba(255, 111, 91, 0.15);
+}
+
+select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background-color: white;
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+select:focus {
+    outline: none;
+    border-color: var(--coral);
+    box-shadow: 0 0 0 2px rgba(255, 111, 91, 0.15);
+}
+
+[id$="message"] {
+    min-height: 18px;
+    margin-top: 8px;
+    color: var(--error);
+    font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+    text-align: left;
+}
+
+#quizform > div {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 30px;
+}
+
+button {
+    padding: 12px 28px;
+    border: none;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#submitbtn {
+    background-color: var(--coral);
+    color: white;
+}
+
+#submitbtn:hover {
+    background-color: var(--coral-dark);
+}
+
+#resetbtn {
+    background-color: white;
+    color: var(--coral-dark);
+    border: 1px solid var(--coral);
+}
+
+#resetbtn:hover {
+    background-color: var(--coral);
+    color: white;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 22px;
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+#result:empty {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 30px 15px;
+    }
+
+    #quizform {
+        padding: 28px 22px;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    #quizform > div {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
