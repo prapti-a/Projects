@@ -11,9 +11,12 @@
     --muted: #9a8f88;
     --coral: #ff6f5b;
     --coral-dark: #e5533f;
+    --secondary: #fff0ed;
     --border: #f0ddd8;
     --error: #d64b3a;
+    --error-bg: #fff0ed;
     --success: #2f8f5b;
+    --success-bg: #eef8f1;
 }
 
 body {
@@ -36,21 +39,12 @@ h1 {
     text-align: center;
     font-family: "Dancing Script", sans-serif;
     font-size: 3.5rem;
-    font-weight: 700;
-    color: white;
-}
-
-h1 em {
-    font-family: "Dancing Script", sans-serif;
-    font-style: normal;
     color: white;
 }
 
 legend {
     width: 100%;
     margin-bottom: 16px;
-    color: var(--text);
-    font-family: Arial, sans-serif;
     font-size: 1rem;
     font-weight: 600;
     line-height: 1.5;
@@ -87,15 +81,26 @@ fieldset label {
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 8px 0;
-    color: var(--text);
-    font-family: Arial, sans-serif;
+    padding: 10px 14px;
+    margin: 6px 0;
+    border-radius: 10px;
     font-size: 0.95rem;
     cursor: pointer;
 }
 
 fieldset label:hover {
+    background-color: var(--secondary);
     color: var(--coral-dark);
+}
+
+fieldset.correct label:has(input:checked) {
+    background-color: var(--success-bg);
+    color: var(--success);
+}
+
+fieldset.incorrect label:has(input:checked) {
+    background-color: var(--error-bg);
+    color: var(--error);
 }
 
 fieldset input[type="radio"],
@@ -104,10 +109,10 @@ fieldset input[type="checkbox"] {
     height: 16px;
     accent-color: var(--coral);
     cursor: pointer;
-    flex-shrink: 0;
 }
 
-#q3 {
+#q3,
+select {
     width: 100%;
     padding: 12px 14px;
     border: 1px solid var(--border);
@@ -122,37 +127,44 @@ fieldset input[type="checkbox"] {
     color: var(--muted);
 }
 
-#q3:focus {
-    outline: none;
-    border-color: var(--coral);
-    box-shadow: 0 0 0 2px rgba(255, 111, 91, 0.15);
-}
-
-select {
-    width: 100%;
-    padding: 12px 14px;
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    background-color: white;
-    color: var(--text);
-    font-family: Arial, sans-serif;
-    font-size: 0.95rem;
-    cursor: pointer;
-}
-
+#q3:focus,
 select:focus {
     outline: none;
     border-color: var(--coral);
     box-shadow: 0 0 0 2px rgba(255, 111, 91, 0.15);
 }
 
+select {
+    cursor: pointer;
+}
+
 [id$="message"] {
     min-height: 18px;
     margin-top: 8px;
     color: var(--error);
-    font-family: Arial, sans-serif;
     font-size: 0.8rem;
-    text-align: left;
+}
+
+fieldset.correct,
+fieldset.incorrect {
+    border-radius: 10px;
+    padding: 24px 16px;
+}
+
+fieldset.correct {
+    background-color: var(--success-bg);
+}
+
+fieldset.incorrect {
+    background-color: var(--error-bg);
+}
+
+.correct [id$="message"] {
+    color: var(--success);
+}
+
+.incorrect [id$="message"] {
+    color: var(--error);
 }
 
 #quizform > div {
@@ -172,7 +184,10 @@ button {
     letter-spacing: 0.08em;
     text-transform: uppercase;
     cursor: pointer;
-    transition: 0.2s ease;
+}
+
+button:active {
+    transform: scale(0.97);
 }
 
 #submitbtn {
@@ -201,10 +216,11 @@ button {
     background-color: var(--card-bg);
     border-radius: 12px;
     color: var(--text);
-    font-family: Arial, sans-serif;
     font-size: 1rem;
     font-weight: 600;
+    line-height: 1.8;
     text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 #result:empty {
