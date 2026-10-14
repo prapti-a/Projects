@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="weather">
+
+        <h1>Weather</h1>
+
+        <form id="weather-form">
+            <input type="text" id="city" name="city" placeholder="Search for a city" required>
+            <button type="submit" id="search">SUBMIT</button>
+        </form>
+
+        <div class="weather-cities">
+
+            <div class="weatherDetails">
+                <div class="weatherLayout">
+                    <div class="weatherLeft">
+                        <h2>
+                            <span id="cityName">City</span>
+                            <span id="countryCode">Country code</span>
+                        </h2>
+                       
+                        <p id="localTime" class="localTime">00:00</p>
+                        <p id="temperature" class="temperature">0°C</p>
+                        <p id="condition" class="description">Weather description</p>
+                    </div>
+                    <div class="weatherRight">
+                        <div id="weatherIcon" class="weatherIcon"></div>
+                        <div class="weatherInfo">
+                            <div>
+                                <p class="infoLabel">HUMIDITY</p>
+                                <p id="humidity" class="infoValue">0%</p>
+                            </div>
+                            <div>
+                                <p class="infoLabel">WIND SPEED</p>
+                                <p id="windSpeed" class="infoValue">0 km/h</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p id="message"></p>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
